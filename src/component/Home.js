@@ -1,11 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { toast } from "react-toastify"
+import { toast } from "react-toastify";
 
 
-export const Home = () => {
-
+    const Home = () => {
     const contacts = useSelector(state =>state)
     const dispatch = useDispatch()
     
@@ -24,7 +23,7 @@ export const Home = () => {
                     <table className= "table table-hover">
                         <thead className='text-white bg-dark text-center'>
                             <tr>
-                                <th scope='col'>#</th>
+                                <th scope='col'></th>
                                 <th scope='col'>Name</th>
                                 <th scope='col'>Email</th>
                                 <th scope='col'>Number</th>
@@ -51,3 +50,5 @@ export const Home = () => {
         </div>
     )
 }
+
+export default Home;

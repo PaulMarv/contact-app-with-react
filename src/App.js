@@ -3,7 +3,7 @@ import './App.css';
 import { ToastContainer } from 'react-toastify';
 import { Navbar } from './component/Navbar';
 import { Route, Switch } from 'react-router-dom';
-import { Home } from './component/Home';
+import  Home  from './component/Home';
 import { AddContact } from './component/AddContact';
 import { EditContact } from './component/EditContact';
 

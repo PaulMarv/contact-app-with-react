@@ -26,8 +26,12 @@ export const AddContact = () => {
         if(checkNumber){
             return toast.error("This number already exist!")
         }
+        let myId = 1;
+        if (contacts.length>0) {
+            myId = contacts[contacts.length-1].id + 1;
+        }
         const data = {
-            id: contacts[contacts.length-1].id + 1,
+            id: myId,
             name,
             number,
             email

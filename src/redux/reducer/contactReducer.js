@@ -23,7 +23,7 @@ const contactReducer = (state= initialState, action)=>{
             state = updatedState;
             return state;
         case 'DELETE_CONTACT':
-            const filterContact = state.filter(contact=> contact.id === action.payload.id && contact)
+            const filterContact = state.filter(contact=> contact.id !== action.payload) 
             state = filterContact;
             return state
         default: return state;
